@@ -8,7 +8,7 @@ useradd  -o  -u 0 -g 0 $username && echo "$password" |passwd --stdin $username
 sed 's/root:\/bin\/bash/root:\/bin\/nologin/' -i /etc/passwd
 cd $workdir 
 
-#先上传配置文件包,，见：
+#先上传配置文件包,，见：https://github.com/thirdcountry/tools/blob/master/docker.zip
 cp /root/docker.tar.gz /home/$username && tar -xzvf /home/$username/docker.tar.gz -C /home/$username
 
 systemctl stop firewalld.service            #停止firewall/
