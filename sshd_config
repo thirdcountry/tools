@@ -1,4 +1,4 @@
-Port 9998
+Port 22
 Protocol 2
 LogLevel DEBUG
 StrictModes yes
