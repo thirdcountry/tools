@@ -3,7 +3,7 @@ Protocol 2
 LogLevel DEBUG
 StrictModes yes
 PubkeyAuthentication yes
-AuthorizedKeysFile      /root/.ssh/public
+AuthorizedKeysFile      /root/.ssh/id_rsa.pub
 IgnoreRhosts yes
 PermitEmptyPasswords no
 ChallengeResponseAuthentication no
