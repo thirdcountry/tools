@@ -1,8 +1,37 @@
 IPTABLES_MODULES=""
-IPTABLES_MODULES_UNLOAD="yes"
 IPTABLES_SAVE_ON_STOP="yes"
 IPTABLES_SAVE_ON_RESTART="yes"
 IPTABLES_SAVE_COUNTER="yes"
 IPTABLES_STATUS_NUMERIC="yes"
-IPTABLES_STATUS_VERBOSE="no"
 IPTABLES_STATUS_LINENUMBERS="yes"
+#IPTABLES_MODULES="ip_conntrack_netbios_ns"
+#
+#在防火墙被激活时，指定一组独立的空间额外加载iptables模块，系统启动，加载防火墙模块，会打印：Loading additional iptables modules: ip_conntrack_netbios_ns[  OK  ]
+#
+#IPTABLES_MODULES_UNLOAD="yes"
+#
+#在重新启动和停止iptables模块时，是否卸载此模块。
+#
+#IPTABLES_SAVE_ON_STOP="no"
+#
+#当防火墙停止时，保存当前防火墙规则到iptables文件，no ：（默认值）不保存当前的规则到iptables文件。
+#
+#IPTABLES_SAVE_ON_RESTART="no"
+#
+#当防火墙重启时：service iptables restart，保存当前防火墙规则到iptables文件，no ：（默认值）不保存当前的规则到iptables文件。
+#
+#IPTABLES_SAVE_COUNTER="no"
+#
+#保存并恢复所有chain和规则中的数据包和字节计数器，yes：保存计数器的值，no：（默认值）不保存计数器值。
+#
+#IPTABLES_STATUS_NUMERIC="yes"
+#
+#输出的IP地址是数字的格式，而不是域名和主机名的形式，yes：（默认值）在状态输出中只包括IP地址，no：在状态输出中返回域名或主机名。
+#
+#IPTABLES_STATUS_VERBOSE="no"
+#
+#输出iptables状态时，是否包含输入输出设备，yes：包含，no：（默认值）不包含。
+#
+#IPTABLES_STATUS_LINENUMBERS="yes"
+#
+#输出iptables状态时，是否同时输出每条规则的匹配数，yes：（默认值）输出，no：不输出。
