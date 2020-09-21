@@ -21,3 +21,4 @@ function docker_ip() {
 }
 alias dpa='docker ps -a'
 alias dil='docker image ls'
+alias dnl='docker network ls'
